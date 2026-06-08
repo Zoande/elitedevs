@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EliteDevs | Developer Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles-premium-light.css" />
+  </head>
+  <body class="developer-page">
+    <nav class="site-nav">
+      <div class="nav-container">
+        <a href="/" class="nav-logo">ELITEDEVS</a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="/#projects">Projects</a></li>
+          <li class="nav-item"><a href="/about.html">About</a></li>
+          <li class="nav-item"><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="developer-shell">
+      <section id="developer-lock" class="developer-lock">
+        <form id="developer-login" class="developer-panel" autocomplete="off">
+          <p class="eyebrow">Private Area</p>
+          <h1>Developer Dashboard</h1>
+          <label for="developer-password">Password</label>
+          <div class="password-row">
+            <input
+              id="developer-password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+              placeholder="Enter dashboard password"
+            />
+            <button class="button" type="submit">Unlock</button>
+          </div>
+          <p id="developer-login-status" class="developer-status" role="status"></p>
+        </form>
+      </section>
+
+      <section id="developer-dashboard" class="developer-dashboard" hidden>
+        <div class="developer-header">
+          <div>
+            <p class="eyebrow">EliteDevs Internal</p>
+            <h1>Developer Dashboard</h1>
+          </div>
+          <button id="developer-lock-button" class="button ghost" type="button">Lock</button>
+        </div>
+
+        <div class="metric-grid">
+          <article class="metric-card">
+            <p>Total Extension Clicks</p>
+            <strong id="metric-total-clicks">-</strong>
+          </article>
+          <article class="metric-card">
+            <p>Focus Blocker Clicks</p>
+            <strong id="metric-focus-clicks">-</strong>
+          </article>
+          <article class="metric-card">
+            <p>Tab Sorter Pro Clicks</p>
+            <strong id="metric-tab-clicks">-</strong>
+          </article>
+          <article class="metric-card">
+            <p>HumanDocTyper Clicks</p>
+            <strong id="metric-human-doc-clicks">-</strong>
+          </article>
+          <article class="metric-card">
+            <p>Latest Click</p>
+            <strong id="metric-latest-click">-</strong>
+          </article>
+        </div>
+
+        <div class="dashboard-grid">
+          <section class="developer-panel">
+            <div class="panel-heading">
+              <h2>Recent Clicks</h2>
+              <button id="developer-refresh" class="button ghost" type="button">Refresh</button>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Extension</th>
+                    <th>Location</th>
+                  </tr>
+                </thead>
+                <tbody id="recent-clicks-body">
+                  <tr>
+                    <td colspan="3">No data loaded yet.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="developer-panel">
+            <h2>Redirect Links</h2>
+            <div class="link-list">
+              <a href="/focus-blocker/chromewebstore">Focus Blocker (DNR Redirect)</a>
+              <a href="/tab-sorter-pro/chromewebstore">Tab Sorter Pro</a>
+              <a href="/human-doc-typer/chromewebstore">HumanDocTyper</a>
+            </div>
+            <p id="developer-dashboard-status" class="developer-status" role="status"></p>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="/scripts/developer.js"></script>
+  </body>
+</html>

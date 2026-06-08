@@ -69,3 +69,32 @@ Optional environment variables:
 
 - This deliverable is a unified project showcase + status tracker.
 - Each page documents current implementation state and next delivery steps based on source inspection.
+
+## Developer Dashboard and Extension Redirects
+
+Developer dashboard:
+
+- `GET /developer`
+- Prompts for a password only.
+- `POST /api/developer-metrics` validates `DEVELOPER_PASSWORD`.
+- If `RECEIVER_DEVELOPER_METRICS_URL` is configured, the broker requests metrics from the receiver service.
+
+Tracked Chrome Web Store redirects:
+
+- `/focus-blocker/chromewebstore` -> Focus Blocker (DNR Redirect)
+- `/tab-sorter-pro/chromewebstore` -> Tab Sorter Pro
+- `/human-doc-typer/chromewebstore` -> HumanDocTyper
+
+Redirect click tracking:
+
+- Browser sends a compact event to `POST /api/extension-click` using `sendBeacon` when available.
+- The broker adds server-side IP and coarse Vercel geo headers: country, region, and city when available.
+- If `RECEIVER_EXTENSION_CLICK_URL` is configured, the broker forwards the event to the receiver service with a short timeout.
+
+Additional environment variables:
+
+- `DEVELOPER_PASSWORD`: password required for `/developer`.
+- `RECEIVER_DEVELOPER_METRICS_URL`: receiver endpoint for dashboard metrics.
+- `RECEIVER_EXTENSION_CLICK_URL`: receiver endpoint for extension click events.
+- `EXTENSION_CLICK_TIMEOUT_MS`: optional click receiver timeout, default `900`.
+- `DEVELOPER_METRICS_TIMEOUT_MS`: optional dashboard receiver timeout, default `5000`.
