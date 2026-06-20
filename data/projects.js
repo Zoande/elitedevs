@@ -8,18 +8,18 @@ window.PROJECTS = [
     tech: ["TypeScript", "Vite", "Browser Game"],
     stage: "Playable prototype",
     summary:
-      "Hybrid broker roleplay prototype with a 2D deal desk and a 3D warehouse flow for sourcing, negotiating, and dispatch.",
+      "A broker roleplay game with a 2D deal desk and a 3D warehouse. Source deals, negotiate with clients, then handle physical dispatch.",
     details: [
-      "Daily cycle with supplier offers, customer requests, and deal outcomes.",
+      "Daily cycle with supplier offers, client requests, and deal outcomes.",
       "Warehouse mode with keyboard controls for package handling.",
-      "README includes clear next build targets around persistence and negotiation depth."
+      "README lists clear next targets around persistence and negotiation depth."
     ],
     status:
-      "Runs as a Vite app. Core loop is present; deeper systems like long-term progression are still in-progress.",
+      "Runs as a Vite app. The core loop works for one full in-game day. Long-term progression and deeper negotiation are still in progress.",
     deliverableSteps: [
-      "Lock a stable gameplay loop for one full in-game day.",
-      "Persist inventory/cash/reputation to local storage.",
-      "Add balancing pass and issue tracking for next milestone."
+      "Lock a stable loop for one full in-game day.",
+      "Persist inventory, cash, and reputation to local storage.",
+      "Add a balancing pass and issue tracking for the next milestone."
     ]
   },
   {
@@ -31,18 +31,18 @@ window.PROJECTS = [
     tech: ["React", "Vite", "JavaScript"],
     stage: "Feature-rich frontend prototype",
     summary:
-      "Trading assistant-style frontend with market scanning, signal logic, news sentiment hooks, and portfolio-facing utilities.",
+      "A trading assistant frontend with market scanning, signal logic, news sentiment hooks, and portfolio utilities.",
     details: [
-      "Large App.jsx implements API fetch layers and decision heuristics.",
-      "Includes CORS proxy fallback strategy and multi-source data pulls.",
-      "Project is code-heavy and suitable for modularization into smaller services."
+      "Large App.jsx with API fetch layers and decision heuristics.",
+      "CORS proxy fallback and multi-source data pulls.",
+      "Code-heavy and ready to be split into smaller, focused modules."
     ],
     status:
-      "Substantial logic exists in one large file; functionality is broad but maintainability should be improved.",
+      "Broad functionality in one large file. Works but could be cleaner.",
     deliverableSteps: [
-      "Split API, strategy, and UI concerns into separate modules.",
-      "Move keys/secrets to environment variables only.",
-      "Add deterministic tests for signal-confidence math."
+      "Split API, strategy, and UI into separate modules.",
+      "Move keys to environment variables.",
+      "Add tests for the signal-confidence math."
     ]
   },
   {
@@ -54,18 +54,18 @@ window.PROJECTS = [
     tech: ["Next.js", "TypeScript", "Canvas"],
     stage: "Playable concept",
     summary:
-      "Typing-based action runner where typed commands control jump/crouch/sprint and influence score/combo.",
+      "A typing-based action runner where typed commands control jump, crouch, and sprint - affecting score and combo.",
     details: [
-      "Canvas loop and keyboard handling are in place.",
-      "Tutorial and restart behavior already implemented.",
-      "Several systems are still marked as stubs for future expansion."
+      "Canvas loop and keyboard handling are working.",
+      "Tutorial and restart behavior already in.",
+      "Several systems are stubs for future expansion."
     ],
     status:
-      "Good gameplay direction with clear mechanics; not yet fully production-tuned.",
+      "Good direction with clear mechanics. Not yet fully tuned for production.",
     deliverableSteps: [
       "Replace placeholder obstacle logic with full word/action generation.",
-      "Complete collision/game-over balancing.",
-      "Add mobile-friendly input mode."
+      "Finish collision and game-over balancing.",
+      "Add a mobile-friendly input mode."
     ]
   },
   {
@@ -77,18 +77,18 @@ window.PROJECTS = [
     tech: ["Vanilla JS", "HTML5 Canvas", "CSS"],
     stage: "Browser prototype",
     summary:
-      "Megacity simulation prototype featuring terrain generation, building categories, and camera controls.",
+      "A megacity simulation in the browser with terrain generation, building categories, and camera controls.",
     details: [
-      "Plain HTML/CSS/JS stack keeps it lightweight.",
-      "README outlines economy/service systems and controls.",
-      "Good candidate for quick static deployment demos."
+      "Plain HTML, CSS, and JS - no build step needed.",
+      "README covers economy/service systems and controls.",
+      "Good candidate for a standalone playable demo."
     ],
     status:
-      "Straightforward static project; easiest to package as a standalone playable demo.",
+      "Simple static project. Easiest to package as a quick playable demo.",
     deliverableSteps: [
-      "Add save/load state in local storage.",
-      "Surface in-game onboarding for controls.",
-      "Create performance profile presets for low-end devices."
+      "Add save/load via local storage.",
+      "Add in-game onboarding for controls.",
+      "Create performance presets for lower-end devices."
     ]
   },
   {
@@ -100,18 +100,18 @@ window.PROJECTS = [
     tech: ["Next.js", "TypeScript", "Tailwind", "shadcn/ui"],
     stage: "Advanced UI prototype",
     summary:
-      "Planly-style productivity app with calendar, routines, file upload analysis flow, and task scheduling.",
+      "A Planly-style productivity app with calendar, routines, file upload analysis, and task scheduling.",
     details: [
-      "App shell and view system are already structured.",
-      "Upload flow integrates API-based assignment analysis endpoint.",
-      "Rich component set indicates strong design-system foundation."
+      "App shell and view system are structured.",
+      "Upload flow hits an API endpoint for assignment analysis.",
+      "Rich component set with a solid design-system foundation."
     ],
     status:
-      "Frontend is strong; backend/API integration hardening and deployment wiring are next for production readiness.",
+      "Frontend is strong. Backend hardening and deployment wiring are next for production.",
     deliverableSteps: [
-      "Implement robust /api/analyze processing with validation.",
-      "Add persisted auth/user model if multi-user is required.",
-      "Add end-to-end tests for scheduling flow."
+      "Build out /api/analyze with proper validation.",
+      "Add a persisted auth/user model if multi-user is needed.",
+      "Add end-to-end tests for the scheduling flow."
     ]
   },
   {
@@ -123,17 +123,17 @@ window.PROJECTS = [
     tech: ["HTML", "CSS", "Vanilla JS"],
     stage: "Static tool",
     summary:
-      "Interactive IB Diploma subject selector with clash rules, grouped subjects, and visual validation summaries.",
+      "An IB Diploma subject selector with clash detection, grouped subjects, and visual validation summaries.",
     details: [
-      "Single-page static app with polished UI styling.",
-      "Designed for practical subject-combination planning.",
-      "Great fit for direct static hosting."
+      "Single-page static app with polished styling.",
+      "Built for practical subject-combination planning.",
+      "Ready for direct static hosting."
     ],
     status:
-      "Already close to deployable static utility.",
+      "Close to deployable as a static utility.",
     deliverableSteps: [
-      "Add export/share of chosen subject package.",
-      "Persist selection state in local storage.",
+      "Add export/share for chosen subject packages.",
+      "Persist selections in local storage.",
       "Add keyboard navigation accessibility pass."
     ]
   },
@@ -146,18 +146,18 @@ window.PROJECTS = [
     tech: ["Next.js", "TypeScript", "Tailwind"],
     stage: "Collaborative app prototype",
     summary:
-      "Collaborative sticky notes board with color-coded notes, optional lock codes, and styled board interface.",
+      "A collaborative sticky notes board with color-coded notes, optional lock codes, and a styled board interface.",
     details: [
-      "Server actions and DB table initialization hooks are present.",
+      "Server actions and DB table init hooks are in place.",
       "Board UI and note creation panel are fully styled.",
-      "Likely needs production DB/env setup for hosted use."
+      "Needs a production DB and env setup to host publicly."
     ],
     status:
       "Feature-rich frontend with server-side dependencies that need deployment-ready data configuration.",
     deliverableSteps: [
-      "Switch to managed database provider for Vercel deployment.",
-      "Add note ownership/auth boundaries.",
-      "Implement rate-limiting and content validation."
+      "Switch to a managed database provider for Vercel deployment.",
+      "Add note ownership and auth boundaries.",
+      "Add rate-limiting and content validation."
     ]
   },
   {
@@ -169,18 +169,18 @@ window.PROJECTS = [
     tech: ["React", "Vite", "Tailwind"],
     stage: "Multi-page frontend",
     summary:
-      "Study efficiency app frontend with router-based pages for dashboard, practice, pricing, analytics, and support chat widget.",
+      "A study efficiency app frontend with pages for dashboard, practice, pricing, analytics, and a support chat widget.",
     details: [
-      "Router skeleton and key pages/components are wired.",
-      "Visual and navigation structure are established.",
-      "Can be matured with real data integrations."
+      "Router skeleton and key pages are wired up.",
+      "Visual and navigation structure are in place.",
+      "Can be connected to real data integrations."
     ],
     status:
-      "Usable frontend shell with clear expansion path into a full product.",
+      "Solid frontend shell with a clear path to a full product.",
     deliverableSteps: [
       "Connect dashboards to real analytics/state.",
       "Add auth and account-level persistence.",
-      "Profile bundle and lazy-load heavier views."
+      "Profile the bundle and lazy-load heavier views."
     ]
   },
   {
@@ -192,18 +192,18 @@ window.PROJECTS = [
     tech: ["React", "TypeScript", "Vite", "Tailwind"],
     stage: "Playable game prototype",
     summary:
-      "Memory/swap game with difficulty progression, rounds, lives, scoring, settings, and audio feedback systems.",
+      "A memory/swap game with difficulty progression, rounds, lives, scoring, settings, and audio feedback.",
     details: [
-      "Typed game state model and round verification flow are in place.",
+      "Typed game state and round verification are in place.",
       "Includes dark mode and modal overlays.",
-      "Code comments indicate iterative fixes and UI improvements."
+      "Code comments show iterative fixes and UI improvements."
     ],
     status:
-      "Most complete game architecture among the game repos; good candidate for polishing into a standout demo.",
+      "Most complete game architecture in the repo. Good candidate for polishing into a standout demo.",
     deliverableSteps: [
-      "Add session persistence and leaderboard storage.",
+      "Add session persistence and a leaderboard.",
       "Finalize balancing across higher difficulty tiers.",
-      "Add touch-first controls and QA for mobile."
+      "Add touch-first controls and mobile QA."
     ]
   },
   {
@@ -216,13 +216,13 @@ window.PROJECTS = [
     tech: ["Browser Extension", "TypeScript", "Chrome", "Edge"],
     stage: "Published & Live",
     summary:
-      "Cross-browser extension for smart tab management with automatic sorting, grouping, and productivity features. Available on Chrome Web Store and Microsoft Edge Add-ons.",
+      "A Chrome and Edge extension that sorts and groups your tabs automatically. One click to organize a full window.",
     details: [
-      "Automatic tab organization and intelligent grouping system.",
-      "One-click sorting and cleaning for cluttered workspaces.",
-      "Active user base spanning Australia, Brazil, Canada, China, Czechia, France, Germany, Hong Kong SAR, Hungary, India, Indonesia, Japan, Korea, Malaysia, Netherlands, Philippines, Singapore, Sweden, Switzerland, United Kingdom, United States, and Vietnam.",
-      "125+ total installs with consistent 4+ star ratings.",
-      "Lightweight, fast extension that integrates seamlessly with Edge browser workflows."
+      "Auto-sorts by domain and creates color-coded tab groups.",
+      "One-click duplicate cleanup and inactive tab removal.",
+      "Active users in Australia, Brazil, Canada, China, Czechia, France, Germany, Hong Kong SAR, Hungary, India, Indonesia, Japan, Korea, Malaysia, Netherlands, Philippines, Singapore, Sweden, Switzerland, United Kingdom, United States, and Vietnam.",
+      "125+ total installs.",
+      "Single codebase running on both Chrome and Edge via the WebExtensions API."
     ],
     highlights: {
       activeUsers: "64+",
@@ -231,34 +231,33 @@ window.PROJECTS = [
       countryList: "Australia, Brazil, Canada, China, Czechia, France, Germany, Hong Kong SAR, Hungary, India, Indonesia, Japan, Korea, Malaysia, Netherlands, Philippines, Singapore, Sweden, Switzerland, United Kingdom, United States, Vietnam"
     },
     status:
-      "Production-ready extension in Microsoft Edge Add-ons store with continuous user growth and international reach.",
+      "Live on the Chrome Web Store and Edge Add-ons with steady user growth.",
     features: [
-      "Smart Auto-Sort: Intelligently organize tabs by domain and purpose",
-      "Group Management: Create and manage tab groups with custom colors",
-      "One-Click Cleanup: Remove duplicates and inactive tabs instantly",
-      "Tab Search: Quick find any tab across your browser session",
-      "Keyboard Shortcuts: Power user shortcuts for speed",
-      "Sync Across Devices: Keep your organization synchronized"
+      "Auto-Sort: Sorts tabs by domain and groups them in one click",
+      "Tab Groups: Color-coded groups created automatically",
+      "Duplicate Cleanup: Finds and closes duplicate tabs",
+      "Tab Search: Search all open tabs by title or URL",
+      "Keyboard Shortcuts: Sort without opening the popup",
+      "Ungroup All: Flatten back to ungrouped tabs anytime"
     ]
   },
   {
     id: "pablo-focus-blocker",
-    title: "Focus Blocker - DNR Redirect",
-    owner: "Dima",
+    title: "Focus Blocker",
+    owner: "Pablo",
     extUrl: "https://chromewebstore.google.com/detail/focus-blocker-dnr-redirec/dlbjkoeipepfliekbhiojgalkbdhhogi",
     edgeUrl: "https://microsoftedge.microsoft.com/addons/detail/focus-blocker-dnr-redire/blbdfgcopalolnckkhfbdnnfpmaillpl",
     chromeUrl: "https://chromewebstore.google.com/detail/focus-blocker-dnr-redirec/dlbjkoeipepfliekbhiojgalkbdhhogi",
     tech: ["Browser Extension", "Declarative Net Request", "Chrome", "Edge"],
     stage: "Published & Live",
     summary:
-      "Privacy-focused cross-browser extension that blocks distracting websites and redirects using Declarative Net Request. Available on Chrome Web Store and Microsoft Edge Add-ons.",
+      "A Chrome and Edge extension that blocks distracting websites. Uses the DNR API - no background snooping, no data collection.",
     details: [
-      "Uses Microsoft Edge's Declarative Net Request API for efficient blocking.",
-      "Customizable blocklist with preset categories and custom rules.",
-      "Users across 22 countries benefit from distraction-free browsing.",
-      "Active in Australia, Brazil, Canada, China, Czechia, France, Germany, Hong Kong SAR, Hungary, India, Indonesia, Japan, Korea, Malaysia, Netherlands, Philippines, Singapore, Sweden, Switzerland, United Kingdom, United States, and Vietnam.",
-      "Privacy-first design with no data collection or tracking.",
-      "Lightweight implementation for minimal resource usage."
+      "Blocks sites at the network level using Chrome and Edge's DNR API.",
+      "Custom blocklist you control. Add any domain and it's blocked immediately.",
+      "Focus mode toggle - switch blocking on or off from the popup.",
+      "Users across 22 countries.",
+      "No tracking, no telemetry, no account required."
     ],
     highlights: {
       downloads: "50+",
@@ -267,14 +266,14 @@ window.PROJECTS = [
       countryList: "Australia, Brazil, Canada, China, Czechia, France, Germany, Hong Kong SAR, Hungary, India, Indonesia, Japan, Korea, Malaysia, Netherlands, Philippines, Singapore, Sweden, Switzerland, United Kingdom, United States, Vietnam"
     },
     status:
-      "Live and actively used across the globe with a growing international user base seeking privacy and focus.",
+      "Live on Chrome and Edge stores. Used daily across 22 countries.",
     features: [
-      "Efficient Blocking: Uses Edge's Declarative Net Request for zero-lag performance",
-      "Customizable Rules: Create specific blocklists for work, study, or relaxation modes",
-      "Preset Categories: Pre-configured categories for social media, news, gaming, etc.",
-      "Redirect Support: Intelligently redirect blocked sites to focus pages",
-      "No Data Collection: Your browsing habits stay private",
-      "Cross-Device Sync: Sync your preferences across Windows, Mac, and Linux"
+      "DNR Blocking: Network-level blocking with zero lag",
+      "Custom Blocklist: Add any domain you want blocked",
+      "Focus Mode Toggle: Switch blocking on and off easily",
+      "No Data Collection: Nothing leaves your device",
+      "Lightweight: No persistent background processes",
+      "Manifest V3: Built on the current extension standard"
     ]
   },
   {
@@ -286,12 +285,12 @@ window.PROJECTS = [
     tech: ["Browser Extension", "Chrome", "Google Docs"],
     stage: "Published & Live",
     summary:
-      "Chrome extension that types text into Google Docs with natural, human-like cadence — variable speed, realistic pauses, and configurable typing profiles.",
+      "A Chrome extension that types text into Google Docs at a natural, human-like pace. Variable WPM, realistic pauses, and in-doc playback controls.",
     details: [
-      "Configurable WPM range and pause distribution to mimic real-person typing rhythm.",
-      "Pasteboard-aware: paste from clipboard or load from a saved snippet, then play back at human pace.",
-      "Pause, resume, and abort controls integrated directly in the Docs page.",
-      "Lightweight Manifest V3 architecture with no external network calls — content stays local to the tab."
+      "Set a WPM range and the extension samples keystroke timing from within that range.",
+      "Paste from clipboard or load a saved snippet, then play it back.",
+      "Start, pause, resume, and stop from a widget inside the Google Doc.",
+      "Manifest V3 with no external network calls. Everything runs locally in the tab."
     ],
     highlights: {
       platform: "Chrome Web Store",
@@ -299,14 +298,14 @@ window.PROJECTS = [
       privacy: "100% local"
     },
     status:
-      "Live on the Chrome Web Store and used daily for personal workflow automation.",
+      "Live on the Chrome Web Store.",
     features: [
-      "Variable WPM: Set min/max typing speed for a natural distribution",
-      "Realistic Pauses: Pause patterns that match real typing behavior",
-      "Profile Presets: Swap between calm, normal, and fast typing personalities",
-      "In-Doc Controls: Start, pause, and stop from inside Google Docs",
-      "Clipboard Sync: Paste from clipboard with a single click",
-      "Privacy First: No telemetry, no external requests, no account required"
+      "Variable WPM: Set min/max typing speed for a natural range",
+      "Pause Patterns: Realistic pauses at punctuation and between words",
+      "Speed Presets: Calm, Normal, and Fast profiles built in",
+      "In-Doc Controls: Start and stop from inside the Google Doc",
+      "Clipboard Input: Paste from clipboard with one click",
+      "Local Only: No telemetry, no external requests, no account"
     ]
   },
   {
@@ -319,20 +318,20 @@ window.PROJECTS = [
     tech: ["React 19", "Vite", "BabylonJS 7", "WebSocket", "TypeScript", "SQLite"],
     stage: "Real-time multiplayer prototype",
     summary:
-      "Browser-based real-time space strategy game with a split client/server architecture: React+BabylonJS frontend, WebSocket game server, separate HTTP auth server, and an orchestrator that hosts multiple game versions on isolated worktrees in parallel.",
+      "A browser-based real-time space strategy game with a split client/server setup: React+BabylonJS frontend, WebSocket game server, HTTP auth server, and an orchestrator that runs multiple game versions in parallel.",
     details: [
-      "End-to-end real-time loop: login, claim a country, explore the galaxy, expand with starbases and districts, manage economy and research over time.",
-      "Three account tiers — player, observer, admin — with map visibility scoped to role and in-game admin debug commands.",
-      "BabylonJS 7 command view with procedural skybox, loaded GLB ships and starbases, and HUD-style overlays.",
+      "Full real-time loop: login, claim a country, explore the galaxy, expand with starbases and districts, manage economy and research.",
+      "Three account tiers (player, observer, admin) with map visibility scoped to role and in-game admin debug commands.",
+      "BabylonJS 7 with a procedural skybox, loaded GLB ships and starbases, and HUD-style overlays.",
       "Auth server uses HttpOnly session cookies and PBKDF2-hashed passwords backed by SQLite.",
-      "Game state persists per-game to JSON on a dirty-write timer; the orchestrator runs each game version as its own isolated server process behind a single gateway, so live games stay pinned to the code they started on while new games can run updated code.",
-      "Built around logistics, expansion, economy, research, and market trading — not just direct combat."
+      "Game state persists per-game to JSON on a dirty-write timer. The orchestrator runs each game version as its own isolated server process so live games stay pinned to the code they started on.",
+      "Built around logistics, expansion, economy, research, and market trading - not direct combat."
     ],
     status:
-      "In active development. Local stack runs end-to-end (client + auth + game server + orchestrator). Systems and balance are explicitly still a work in progress.",
+      "In active development. Local stack runs end-to-end with one command. Systems and balance are still a work in progress.",
     deliverableSteps: [
       "Wire up Google/Microsoft OAuth (endpoints stubbed but return 501).",
-      "Balancing pass on economy, research, and market trading systems.",
+      "Balancing pass on economy, research, and market trading.",
       "Public hosted demo via the orchestrator gateway."
     ]
   }

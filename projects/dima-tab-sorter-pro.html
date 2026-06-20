@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tab Sorter Pro | EliteDevs Browser Extension</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -262,8 +263,8 @@
         <ul class="nav-menu">
           <li class="nav-item"><a href="/">Home</a></li>
           <li class="nav-item"><a href="/#projects" class="active">Projects</a></li>
-          <li class="nav-item"><a href="/about.html">About</a></li>
-          <li class="nav-item"><a href="/contact.html">Contact</a></li>
+          <li class="nav-item"><a href="/about">About</a></li>
+          <li class="nav-item"><a href="/contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -275,7 +276,10 @@
     <!-- Header -->
     <header class="project-header">
       <div class="project-header-content">
-        <p style="font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: #2C5F5D; margin: 0 0 1.2rem; font-weight: 600;">Chrome & Edge — Live</p>
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem;">
+          <img src="../images/ext-tab-sorter.png" alt="Tab Sorter Pro icon" style="width: 52px; height: 52px; border-radius: 12px; flex-shrink: 0;" />
+          <p style="font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: #2C5F5D; margin: 0; font-weight: 600;">Chrome & Edge - Live</p>
+        </div>
         <h1>Tab Sorter Pro</h1>
         <p style="font-size: 1.1rem; color: #555; margin: 1.2rem 0 0; max-width: 36rem; line-height: 1.55;">
           Smart tab management for Chrome and Microsoft Edge. Organize, group, and reclaim your focus.
@@ -309,38 +313,49 @@
       <section class="section">
         <h2>Overview</h2>
         <p style="font-size: 1.05rem; line-height: 1.75; text-align: left; max-width: 720px; margin: 0;">
-          Tab Sorter Pro is a cross-browser extension available on the Chrome Web Store and Microsoft Edge Add-ons, designed to transform how you manage browser tabs. Whether you're a student juggling research, a developer with dozens of documentation tabs, or just someone trying to stay organized, Tab Sorter Pro automates the chaos and lets you focus on what matters.
+          Tab Sorter Pro started as a personal fix for a real problem: too many open tabs, no structure, constant switching. It runs on both Chrome and Edge. The core idea is simple - hit a button and your tabs sort by domain and group automatically. No setup required to get started, but there's enough control underneath for people who want it.
         </p>
       </section>
 
       <!-- Features Section -->
       <section class="section" data-aos="fade-up">
-        <h2>Key Features</h2>
+        <h2>What It Does</h2>
         <div class="features-grid">
           <div class="feature-card">
-            <h3>Smart Auto-Sort</h3>
-            <p>Intelligently organize tabs by domain, category, and purpose. One click organizes your entire workspace.</p>
+            <h3>Auto-Sort</h3>
+            <p>One click sorts all open tabs by domain and puts them into groups. Works on a full window of tabs in about a second.</p>
           </div>
           <div class="feature-card">
-            <h3>Group Management</h3>
-            <p>Create custom tab groups with color coding. Work context-aware tab organization for maximum productivity.</p>
+            <h3>Tab Groups</h3>
+            <p>Creates color-coded groups automatically. You can rename and recolor them, or let the defaults do it.</p>
           </div>
           <div class="feature-card">
-            <h3>One-Click Cleanup</h3>
-            <p>Remove duplicates, close inactive tabs, and purge clutter instantly. Reclaim memory and focus.</p>
+            <h3>Duplicate Cleanup</h3>
+            <p>Finds and closes duplicate tabs. Useful when you open the same page twice without noticing.</p>
           </div>
           <div class="feature-card">
             <h3>Tab Search</h3>
-            <p>Instantly find any tab across your entire browser session. No more hunting through dozens of tabs.</p>
+            <p>Search across all open tabs by title or URL. Handy when you have 30 tabs open and need a specific one.</p>
           </div>
           <div class="feature-card">
             <h3>Keyboard Shortcuts</h3>
-            <p>Power user shortcuts for instant access. Speed up your workflow with customizable hotkeys.</p>
+            <p>Sort and clean up without opening the popup. Assign shortcuts in Chrome or Edge settings.</p>
           </div>
           <div class="feature-card">
-            <h3>Cross-Device Sync</h3>
-            <p>Sync your tab organization across all your devices. Start on one device, continue on another seamlessly.</p>
+            <h3>Ungroup All</h3>
+            <p>Flattens everything back to ungrouped tabs when you want a clean slate.</p>
           </div>
+        </div>
+      </section>
+
+      <!-- Screenshots Section -->
+      <section class="section">
+        <h2>Extension Preview</h2>
+        <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: flex-start; margin-top: 1rem;">
+          <figure style="margin: 0; text-align: center;">
+            <img src="../images/tab-sorter-pro-1.png" alt="Tab Sorter Pro popup showing Auto-Sort Now and Ungroup All Tabs buttons" style="max-width: 320px; width: 100%; border: 1px solid #d6d2c8; box-shadow: 0 4px 16px rgba(0,0,0,0.08); display: block;" />
+            <figcaption style="font-size: 0.82rem; color: #777; margin-top: 0.6rem; font-weight: 500;">Auto-Sort and tab group controls</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -382,7 +397,7 @@
       <section class="section">
         <h2>Built With</h2>
         <p style="text-align: left; font-size: 1.05rem; margin: 0 0 2rem; max-width: 720px;">
-          Lean stack — single codebase running across both browser stores.
+          Lean stack - single codebase running across both browser stores.
         </p>
         <div class="features-grid">
           <div class="feature-card">
@@ -403,17 +418,20 @@
       <!-- CTA Section -->
       <section class="cta-section">
         <div>
-          <h2 style="margin: 0 0 0.6rem 0; display: block;">Get Tab Sorter Pro</h2>
-          <p style="font-size: 1rem; margin: 0;">
-            Free to download and use. Available on both stores.
+          <h2 style="margin: 0 0 0.6rem 0; display: block;">Add Tab Sorter Pro to your browser</h2>
+          <p style="font-size: 1rem; margin: 0 0 0.4rem;">
+            Free. No account needed. Works on Chrome and Edge.
           </p>
+          <p style="font-size: 0.85rem; color: #a0a0a0; margin: 0;">125+ installs across 22 countries</p>
         </div>
-        <div style="text-align: right;">
-          <a href="/tab-sorter-pro/chromewebstore" class="cta-button">
-            Install on Chrome
+        <div style="display: flex; flex-direction: column; gap: 0.75rem; align-items: flex-end;">
+          <a href="https://chromewebstore.google.com/detail/tab-sorter-pro/iicmneboehhnamjbbnfblejfgemgihnd" target="_blank" class="cta-button" style="display: flex; align-items: center; gap: 0.7rem; white-space: nowrap;">
+            <img src="../images/logo-chrome.png" alt="" style="width: 20px; height: 20px; flex-shrink: 0;" />
+            Add to Chrome
           </a>
-          <a href="https://microsoftedge.microsoft.com/addons/detail/tab-sorter-pro/knijhblmdgkokapjnghamplmlpmiohpm" target="_blank" class="cta-button" style="background: transparent; border: 1px solid #f3efe8; color: #f3efe8;">
-            Install on Edge
+          <a href="https://microsoftedge.microsoft.com/addons/detail/tab-sorter-pro/knijhblmdgkokapjnghamplmlpmiohpm" target="_blank" class="cta-button" style="background: transparent; border: 1px solid #f3efe8; color: #f3efe8; display: flex; align-items: center; gap: 0.7rem; white-space: nowrap;">
+            <img src="../images/logo-edge.png" alt="" style="width: 20px; height: 20px; flex-shrink: 0;" />
+            Add to Edge
           </a>
         </div>
       </section>
@@ -431,8 +449,8 @@
             <h4>Quick Links</h4>
             <a href="/">Home</a>
             <a href="/#projects">Projects</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
           </div>
           <div class="footer-column">
             <h4>Connect</h4>
