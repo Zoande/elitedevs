@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focus Blocker - DNR Redirect | EliteDevs Browser Extension</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -221,8 +222,8 @@
         <ul class="nav-menu">
           <li class="nav-item"><a href="/">Home</a></li>
           <li class="nav-item"><a href="/#projects" class="active">Projects</a></li>
-          <li class="nav-item"><a href="/about.html">About</a></li>
-          <li class="nav-item"><a href="/contact.html">Contact</a></li>
+          <li class="nav-item"><a href="/about">About</a></li>
+          <li class="nav-item"><a href="/contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -234,8 +235,11 @@
     <!-- Header -->
     <header class="project-header">
       <div class="project-header-content">
-        <p class="eyebrow">Chrome & Edge — Live</p>
-        <h1>Focus Blocker — DNR Redirect</h1>
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem;">
+          <img src="../images/ext-focus.png" alt="Focus Blocker icon" style="width: 52px; height: 52px; border-radius: 12px; flex-shrink: 0;" />
+          <p class="eyebrow" style="margin: 0;">Chrome & Edge - Live</p>
+        </div>
+        <h1>Focus Blocker</h1>
         <p style="font-size: 1.1rem; color: #555; margin: 1.2rem 0 0; max-width: 36rem; line-height: 1.55;">
           Privacy-first website blocking using the Declarative Net Request API. Block what distracts you. Nothing leaves your device.
         </p>
@@ -268,69 +272,61 @@
       <section class="section">
         <h2>Overview</h2>
         <p style="font-size: 1.05rem; line-height: 1.75; text-align: left; max-width: 720px; margin: 0;">
-          Focus Blocker is a privacy-focused extension available on the Chrome Web Store and Microsoft Edge Add-ons that helps you regain control of your browsing experience. Using the Declarative Net Request API, it blocks distracting websites with zero lag, no data collection, and no compromise on your privacy.
+          Focus Blocker is a site-blocking extension for Chrome and Edge. It uses the browser's Declarative Net Request API, which means blocking happens at the network level - there's no background script watching your traffic, and nothing leaves your device. Add a domain, toggle focus mode, and it's blocked. That's about it.
         </p>
-
-        <div class="highlight-box">
-          <p>In a world of infinite distractions, maintaining focus is the ultimate competitive advantage. Focus Blocker makes it effortless.</p>
-        </div>
-      </section>
-
-      <!-- Privacy Section -->
-      <section class="section">
-        <h2>Privacy First</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <h3>No Tracking</h3>
-            <p>We never collect, store, or analyze your browsing data. Your privacy is protected by design.</p>
-          </div>
-          <div class="feature-card">
-            <h3>Zero Latency</h3>
-            <p>Uses Declarative Net Request for instant blocking with minimal performance impact.</p>
-          </div>
-          <div class="feature-card">
-            <h3>Local Only</h3>
-            <p>All settings are stored locally on your device. Nothing is transmitted to external servers.</p>
-          </div>
-        </div>
       </section>
 
       <!-- Features Section -->
       <section class="section">
-        <h2>Powerful Features</h2>
+        <h2>What It Does</h2>
         <div class="features-grid">
           <div class="feature-card">
-            <h3>Customizable Rules</h3>
-            <p>Create specific blocklists for different contexts: work mode, study mode, or pure relaxation mode.</p>
+            <h3>Site Blocking</h3>
+            <p>Add any domain to your blocklist and it gets blocked the moment you try to visit it. No delay, no loading screen.</p>
           </div>
           <div class="feature-card">
-            <h3>Preset Categories</h3>
-            <p>Pre-configured blocklists for social media, news sites, gaming, and other distraction categories. One click to enable.</p>
+            <h3>Focus Mode Toggle</h3>
+            <p>Switch focus mode on or off from the popup. When it's off, your blocked sites load normally.</p>
           </div>
           <div class="feature-card">
-            <h3>Smart Redirects</h3>
-            <p>Intelligently redirect blocked sites to productive alternatives. Transform distraction into motivation.</p>
+            <h3>DNR-Based</h3>
+            <p>Uses Chrome and Edge's Declarative Net Request API. Blocking is handled by the browser, not a content script - so it's fast and doesn't read your page data.</p>
           </div>
           <div class="feature-card">
-            <h3>Schedule Blocking</h3>
-            <p>Set time-based blocking rules. Auto-enable focus mode during work hours, automatically disable during breaks.</p>
+            <h3>Custom Blocklist</h3>
+            <p>Type in any domain and add it. No preset categories you have to work around - just a list you control.</p>
           </div>
           <div class="feature-card">
-            <h3>No Analytics</h3>
-            <p>No telemetry, no tracking, no analytics. We literally cannot see what you're blocking or when.</p>
+            <h3>No Data Collection</h3>
+            <p>Nothing is sent anywhere. Your blocklist stays on your machine. There's no account, no sync, no telemetry.</p>
           </div>
           <div class="feature-card">
-            <h3>Cross-Device Sync</h3>
-            <p>Sync your blocklists across Windows, Mac, and Linux. Consistent focus everywhere you work.</p>
+            <h3>Minimal Footprint</h3>
+            <p>Doesn't run any persistent background processes. Low memory usage and no impact on page load times.</p>
           </div>
+        </div>
+      </section>
+
+      <!-- Screenshots Section -->
+      <section class="section">
+        <h2>Extension Preview</h2>
+        <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: flex-start; margin-top: 1rem;">
+          <figure style="margin: 0; text-align: center;">
+            <img src="../images/focus-blocker-1.png" alt="Focus Blocker popup showing Focus Mode toggle and Block Current Site button" style="max-width: 320px; width: 100%; border: 1px solid #d6d2c8; box-shadow: 0 4px 16px rgba(0,0,0,0.08); display: block;" />
+            <figcaption style="font-size: 0.82rem; color: #777; margin-top: 0.6rem; font-weight: 500;">Focus Mode toggle and site blocking</figcaption>
+          </figure>
+          <figure style="margin: 0; text-align: center;">
+            <img src="../images/focus-blocker-2.png" alt="Focus Blocker popup showing the blocklist input and Blocked Sites section" style="max-width: 320px; width: 100%; border: 1px solid #d6d2c8; box-shadow: 0 4px 16px rgba(0,0,0,0.08); display: block;" />
+            <figcaption style="font-size: 0.82rem; color: #777; margin-top: 0.6rem; font-weight: 500;">Add sites to your blocklist</figcaption>
+          </figure>
         </div>
       </section>
 
       <!-- Global Reach Section -->
       <section class="section">
-        <h2>Global Community</h2>
+        <h2>Where It's Used</h2>
         <p style="text-align: left; font-size: 1.05rem; margin: 0 0 2rem; max-width: 720px;">
-          Used by developers, students, and professionals in <strong>22 countries</strong>.
+          Installed in <strong>22 countries</strong> across 4 continents.
         </p>
         <div class="countries-section">
           <div class="countries-grid">
@@ -363,40 +359,18 @@
       <!-- Technical Section -->
       <section class="section">
         <h2>Built With</h2>
-        <p style="text-align: left; font-size: 1.05rem; margin: 0 0 2rem; max-width: 720px;">
-          Engineered for performance and privacy.
-        </p>
         <div class="features-grid">
           <div class="feature-card">
-            <h3>DNR API</h3>
-            <p>Chrome and Microsoft Edge's Declarative Net Request API for efficient, privacy-preserving blocking.</p>
+            <h3>Declarative Net Request</h3>
+            <p>The DNR API is Chrome and Edge's preferred way to do network-level blocking. Faster and more private than the older webRequest approach.</p>
           </div>
           <div class="feature-card">
-            <h3>Lightweight</h3>
-            <p>Minimal memory footprint. Doesn't slow down your browsing.</p>
+            <h3>Manifest V3</h3>
+            <p>Uses the current extension architecture standard, so it won't break when older APIs get deprecated.</p>
           </div>
           <div class="feature-card">
-            <h3>Zero Cloud</h3>
-            <p>Everything runs locally. No external dependencies or cloud services.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Use Cases Section -->
-      <section class="section">
-        <h2>Perfect For</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <h3>Developers</h3>
-            <p>Stay in the flow. Block news, social media, and other distractions while maintaining focus on code.</p>
-          </div>
-          <div class="feature-card">
-            <h3>Students</h3>
-            <p>Create study modes that block entertainment sites during exam prep and project deadlines.</p>
-          </div>
-          <div class="feature-card">
-            <h3>Professionals</h3>
-            <p>Maximize productivity during work hours. Automatically reclaim focus during peak productivity times.</p>
+            <h3>No External Dependencies</h3>
+            <p>Everything runs inside the extension. No libraries, no CDN calls, no remote config.</p>
           </div>
         </div>
       </section>
@@ -404,17 +378,20 @@
       <!-- CTA Section -->
       <section class="cta-section">
         <div>
-          <h2 style="margin: 0 0 0.6rem 0; display: block;">Reclaim Your Focus</h2>
-          <p style="font-size: 1rem; margin: 0;">
-            113+ active users worldwide. Free to download. Privacy-respecting.
+          <h2 style="margin: 0 0 0.6rem 0; display: block;">Add Focus Blocker to your browser</h2>
+          <p style="font-size: 1rem; margin: 0 0 0.4rem;">
+            Free. No account needed. Works on Chrome and Edge.
           </p>
+          <p style="font-size: 0.85rem; color: #a0a0a0; margin: 0;">113+ installs across 22 countries</p>
         </div>
-        <div style="text-align: right;">
-          <a href="/focus-blocker/chromewebstore" class="cta-button">
-            Install on Chrome
+        <div style="display: flex; flex-direction: column; gap: 0.75rem; align-items: flex-end;">
+          <a href="https://chromewebstore.google.com/detail/focus-blocker-dnr-redirec/dlbjkoeipepfliekbhiojgalkbdhhogi" target="_blank" class="cta-button" style="display: flex; align-items: center; gap: 0.7rem; white-space: nowrap;">
+            <img src="../images/logo-chrome.png" alt="" style="width: 20px; height: 20px; flex-shrink: 0;" />
+            Add to Chrome
           </a>
-          <a href="https://microsoftedge.microsoft.com/addons/detail/focus-blocker-dnr-redire/blbdfgcopalolnckkhfbdnnfpmaillpl" target="_blank" class="cta-button" style="background: transparent; border: 1px solid #f3efe8; color: #f3efe8;">
-            Install on Edge
+          <a href="https://microsoftedge.microsoft.com/addons/detail/focus-blocker-dnr-redire/blbdfgcopalolnckkhfbdnnfpmaillpl" target="_blank" class="cta-button" style="background: transparent; border: 1px solid #f3efe8; color: #f3efe8; display: flex; align-items: center; gap: 0.7rem; white-space: nowrap;">
+            <img src="../images/logo-edge.png" alt="" style="width: 20px; height: 20px; flex-shrink: 0;" />
+            Add to Edge
           </a>
         </div>
       </section>
@@ -432,8 +409,8 @@
             <h4>Quick Links</h4>
             <a href="/">Home</a>
             <a href="/#projects">Projects</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
           </div>
           <div class="footer-column">
             <h4>Connect</h4>
