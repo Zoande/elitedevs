@@ -278,8 +278,8 @@
         <ul class="nav-menu">
           <li class="nav-item"><a href="/">Home</a></li>
           <li class="nav-item"><a href="/#projects">Projects</a></li>
-          <li class="nav-item"><a href="/about.html">About</a></li>
-          <li class="nav-item"><a href="/contact.html">Contact</a></li>
+          <li class="nav-item"><a href="/about">About</a></li>
+          <li class="nav-item"><a href="/contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -290,7 +290,7 @@
 
     <header class="project-header">
       <div>
-        <p class="eyebrow">In development — Pablo</p>
+        <p class="eyebrow">In development - Pablo</p>
         <h1>StellarFronts</h1>
         <p style="font-size: 1.1rem; color: #555; margin: 1.2rem 0 0; max-width: 36rem; line-height: 1.55;">
           A browser-based real-time space strategy game. Login, claim a country, explore the galaxy, expand with starbases and districts, run an economy and research over time. React frontend, BabylonJS 7 command view, WebSocket game server, separate auth server, and an orchestrator that hosts multiple game versions in parallel.
@@ -324,7 +324,7 @@
           </div>
         </div>
         <p style="font-size: 1.05rem; line-height: 1.75; max-width: 720px; margin: 0; color: #333;">
-          StellarFronts is built around logistics, expansion, economy, research, market trading, and system control — not direct combat. The local stack runs end-to-end with one command (<code style="background:#fffdf9; padding: 0 0.35rem; border:1px solid #d6d2c8;">npm run dev:all</code>) and brings up the React client, the HTTP auth server, and the WebSocket game server together.
+          StellarFronts is built around logistics, expansion, economy, research, market trading, and system control - not direct combat. The local stack runs end-to-end with one command (<code style="background:#fffdf9; padding: 0 0.35rem; border:1px solid #d6d2c8;">npm run dev:all</code>) and brings up the React client, the HTTP auth server, and the WebSocket game server together.
         </p>
       </section>
 
@@ -335,7 +335,7 @@
             <p>The codebase is split clean down the middle: <strong>src/</strong> is the React UI, gameplay shared types, and BabylonJS scene; <strong>server/</strong> is the auth server, the game server, and the orchestrator that ties them together behind a single gateway.</p>
             <p>The <strong>auth server</strong> handles login, signup, sessions, and the game catalog. It uses HttpOnly cookies, PBKDF2-hashed passwords, and a SQLite store on disk. Google and Microsoft OAuth endpoints are stubbed for later.</p>
             <p>The <strong>game server</strong> is a WebSocket process that owns the live simulation, broadcasts state, and saves dirty state on a timer to JSON per game.</p>
-            <p>The <strong>orchestrator</strong> is the interesting part — it checks out each game version as an isolated git worktree and runs it as its own game-server process, so a brand-new game can run updated code while an older live game stays pinned to the code it was started on. Clients still talk to one public endpoint; the orchestrator routes them to the right version.</p>
+            <p>The <strong>orchestrator</strong> is the interesting part - it checks out each game version as an isolated git worktree and runs it as its own game-server process, so a brand-new game can run updated code while an older live game stays pinned to the code it was started on. Clients still talk to one public endpoint; the orchestrator routes them to the right version.</p>
           </div>
           <div class="arch-diagram" aria-hidden="true">
             <div class="box">Client (React + BabylonJS) <span class="small">localhost:5173</span></div>
@@ -368,7 +368,7 @@
           </div>
           <div class="feature-card">
             <h3>Run an economy</h3>
-            <p>Logistics, research, and market trading are first-class systems — the game is balanced around them rather than around combat.</p>
+            <p>Logistics, research, and market trading are first-class systems - the game is balanced around them rather than around combat.</p>
           </div>
           <div class="feature-card">
             <h3>Hold sessions</h3>
@@ -395,7 +395,7 @@
           <tbody>
             <tr>
               <td>Player</td>
-              <td>Yes — one generated country per game</td>
+              <td>Yes - one generated country per game</td>
               <td>Scoped to held territory</td>
               <td>No</td>
             </tr>
@@ -451,7 +451,7 @@
       <section class="section">
         <h2>Status</h2>
         <p style="font-size: 1.05rem; line-height: 1.75; max-width: 720px; margin: 0; color: #333;">
-          Actively in development. The full local stack runs end-to-end and the core loop — login, claim, explore, expand, run an economy, persist — is wired up. Systems and balance are explicitly still a work in progress. OAuth endpoints exist but return 501 until Google and Microsoft are turned on.
+          Actively in development. The full local stack runs end-to-end and the core loop - login, claim, explore, expand, run an economy, persist - is wired up. Systems and balance are explicitly still a work in progress. OAuth endpoints exist but return 501 until Google and Microsoft are turned on.
         </p>
       </section>
 
@@ -477,8 +477,8 @@
             <h4>Quick Links</h4>
             <a href="/">Home</a>
             <a href="/#projects">Projects</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
           </div>
           <div class="footer-column">
             <h4>Connect</h4>

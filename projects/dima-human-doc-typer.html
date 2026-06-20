@@ -206,8 +206,8 @@
         <ul class="nav-menu">
           <li class="nav-item"><a href="/">Home</a></li>
           <li class="nav-item"><a href="/#projects">Projects</a></li>
-          <li class="nav-item"><a href="/about.html">About</a></li>
-          <li class="nav-item"><a href="/contact.html">Contact</a></li>
+          <li class="nav-item"><a href="/about">About</a></li>
+          <li class="nav-item"><a href="/contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -218,7 +218,7 @@
 
     <header class="project-header">
       <div class="project-header-content">
-        <p class="eyebrow">Chrome Web Store — Live</p>
+        <p class="eyebrow">Chrome Web Store - Live</p>
         <h1>Types into Google Docs at a real human pace.</h1>
         <p style="font-size: 1.1rem; color: #555; margin: 1.4rem 0 0; max-width: 30rem; line-height: 1.55;">
           Variable WPM, natural pauses, in-doc controls. No popup juggling, no telemetry. Paste a draft, hit play, walk away.
@@ -234,38 +234,49 @@
     <main class="content-grid">
       <section class="section" data-aos="fade-up">
         <h2>Overview</h2>
-        <p style="font-size: 1.1rem; line-height: 1.8; text-align: center; max-width: 800px; margin: 0 auto;">
-          HumanDocTyper is a Chrome extension that takes any text you paste in and types it directly into a Google Doc — but instead of dumping it instantly, it mimics the rhythm of a real person typing. Variable WPM, natural pause distributions, and configurable profiles let the playback feel completely organic.
+        <p style="font-size: 1.05rem; line-height: 1.75; text-align: left; max-width: 720px; margin: 0;">
+          HumanDocTyper is a Chrome extension that types text into a Google Doc at a human pace. You paste in whatever you want typed, set a WPM range, and hit start. It handles the keystrokes with variable timing and natural pauses at punctuation, so the output doesn't look like it was dumped in all at once. Everything runs locally inside the tab - nothing is sent anywhere.
         </p>
       </section>
 
       <section class="section" data-aos="fade-up">
-        <h2>Key Features</h2>
+        <h2>What It Does</h2>
         <div class="features-grid">
           <div class="feature-card">
             <h3>Variable WPM</h3>
-            <p>Set a minimum and maximum words-per-minute. Each keystroke is sampled from the range so the cadence never feels mechanical.</p>
+            <p>Set a min and max words-per-minute. The actual speed varies within that range on each keystroke so it doesn't feel robotic.</p>
           </div>
           <div class="feature-card">
-            <h3>Realistic Pauses</h3>
-            <p>Micro-pauses between words and longer pauses at punctuation match how people actually compose at the keyboard.</p>
+            <h3>Pause Patterns</h3>
+            <p>Short pauses between words, longer ones at commas and periods - the same rhythm people naturally fall into when typing.</p>
           </div>
           <div class="feature-card">
-            <h3>Profile Presets</h3>
-            <p>Switch between calm, normal, and fast presets — or build a custom profile and save it for later.</p>
+            <h3>Speed Presets</h3>
+            <p>Calm, Normal, and Fast presets if you don't want to dial in custom numbers. Swap between them with one click.</p>
           </div>
           <div class="feature-card">
-            <h3>Clipboard Sync</h3>
-            <p>Paste from the clipboard with one click, then let the extension type it out at your chosen pace.</p>
+            <h3>Clipboard Input</h3>
+            <p>Paste from your clipboard directly into the extension and play it back. No need to retype or reformat anything.</p>
           </div>
           <div class="feature-card">
             <h3>In-Doc Controls</h3>
-            <p>Start, pause, and stop directly from a small floating widget inside the Google Doc — no popup juggling.</p>
+            <p>A small widget floats inside the Google Doc while it's running. Start, pause, resume, and stop without leaving the page.</p>
           </div>
           <div class="feature-card">
-            <h3>Privacy First</h3>
-            <p>No telemetry, no external requests, no account required. Everything happens locally inside the tab.</p>
+            <h3>Local Only</h3>
+            <p>No network calls, no account, no telemetry. The extension runs entirely inside your browser tab.</p>
           </div>
+        </div>
+      </section>
+
+      <!-- Screenshots Section -->
+      <section class="section" data-aos="fade-up">
+        <h2>Extension Preview</h2>
+        <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: flex-start; margin-top: 1rem;">
+          <figure style="margin: 0; text-align: center;">
+            <img src="../images/human-doc-typer-1.png" alt="HumanDocTyper popup showing text input area, WPM slider, randomness factor, and playback controls" style="max-width: 340px; width: 100%; border: 1px solid #d6d2c8; box-shadow: 0 4px 16px rgba(0,0,0,0.08); display: block;" />
+            <figcaption style="font-size: 0.82rem; color: #777; margin-top: 0.6rem; font-weight: 500;">WPM controls, pause/resume, and progress tracker</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -274,18 +285,18 @@
         <div class="example-grid">
           <div class="example-card" data-aos="fade-up" data-aos-delay="100">
             <p class="scenario">Scenario</p>
-            <h4>Note-taking demo</h4>
-            <p>You want a clean recording of a doc filling in over time without sitting and typing it yourself. Set it to ~70 WPM and let it run while you grab coffee.</p>
+            <h4>Screen recording</h4>
+            <p>You need a doc to fill in on screen at a readable pace. Set it to 70 WPM and record while it types - no manual performance needed.</p>
           </div>
           <div class="example-card" data-aos="fade-up" data-aos-delay="150">
             <p class="scenario">Scenario</p>
-            <h4>Hands-free drafting</h4>
-            <p>You've drafted a long block in another tool. Paste it in, hit play, and HumanDocTyper transcribes it into Docs while you do something else.</p>
+            <h4>Hands-free transcription</h4>
+            <p>You've got a draft in another tool and want it in Google Docs. Paste it in, hit play, do something else while it fills in.</p>
           </div>
           <div class="example-card" data-aos="fade-up" data-aos-delay="200">
             <p class="scenario">Scenario</p>
-            <h4>Demo recording</h4>
-            <p>Recording a tutorial and need the doc to "type itself" on screen at a human pace? Pick a profile, hit start, capture the screen.</p>
+            <h4>Tutorial demo</h4>
+            <p>Recording a walkthrough and want the doc to appear to be typed live? Pick a profile, start it, and capture the screen.</p>
           </div>
         </div>
       </section>
@@ -295,29 +306,31 @@
         <div class="features-grid">
           <div class="feature-card">
             <h3>Manifest V3</h3>
-            <p>Modern Chrome extension architecture with a service worker and content scripts scoped to docs.google.com.</p>
+            <p>Current Chrome extension architecture. Uses a service worker and content scripts scoped only to docs.google.com.</p>
           </div>
           <div class="feature-card">
             <h3>WebExtensions API</h3>
-            <p>Same code path also runs on Chromium-based browsers — Brave, Arc, Vivaldi, and so on.</p>
+            <p>Same code runs on other Chromium browsers too - Brave, Arc, Vivaldi.</p>
           </div>
           <div class="feature-card">
             <h3>Vanilla TypeScript</h3>
-            <p>No frameworks, no bundler bloat — keeps the runtime overhead near zero inside the doc tab.</p>
+            <p>No frameworks. Keeps the extension small and the overhead inside the doc tab close to zero.</p>
           </div>
         </div>
       </section>
 
       <section class="cta-section">
         <div>
-          <h2 style="margin: 0 0 0.6rem 0; border: none; display: block;">Get HumanDocTyper</h2>
-          <p style="font-size: 1rem; margin: 0;">
-            Free on the Chrome Web Store. Works in any Google Doc, today.
+          <h2 style="margin: 0 0 0.6rem 0; border: none; display: block;">Add HumanDocTyper to Chrome</h2>
+          <p style="font-size: 1rem; margin: 0 0 0.4rem;">
+            Free. Works in any Google Doc right away.
           </p>
+          <p style="font-size: 0.85rem; color: #a0a0a0; margin: 0;">No account needed. Everything stays local.</p>
         </div>
         <div style="text-align: right;">
-          <a href="https://chromewebstore.google.com/detail/human-doc-typer/jnogomlcblccgnpnodfgeecahhpcfaod" target="_blank" class="cta-button">
-            Install on Chrome
+          <a href="https://chromewebstore.google.com/detail/human-doc-typer/jnogomlcblccgnpnodfgeecahhpcfaod" target="_blank" class="cta-button" style="display: flex; align-items: center; gap: 0.6rem; white-space: nowrap;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" fill="#fff" opacity="0.15"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4a4 4 0 014 4H8a4 4 0 014-4zm0 14c-2.76 0-5.2-1.4-6.68-3.54L8.5 13H12a2 2 0 002-2v-1h5.93A8.001 8.001 0 0112 20z" fill="white"/></svg>
+            Add to Chrome
           </a>
         </div>
       </section>
@@ -334,8 +347,8 @@
             <h4>Quick Links</h4>
             <a href="/">Home</a>
             <a href="/#projects">Projects</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
           </div>
           <div class="footer-column">
             <h4>Connect</h4>
