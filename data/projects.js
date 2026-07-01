@@ -69,6 +69,33 @@ window.PROJECTS = [
     ]
   },
   {
+    id: "dh-metrozone",
+    title: "MetroZone",
+    owner: "Dima",
+    repoUrl: "https://github.com/DH4410/MetroZone",
+    playUrl: "https://metrozoone.vercel.app",
+    localPath: "repos/DH4410__MetroZone",
+    tech: ["Three.js", "ES Modules", "Procedural 3D", "HTML5/CSS3"],
+    stage: "Live playable demo",
+    summary:
+      "A semi-3D city builder in the browser. Build roads, highways, apartments, parks, and factories. Manage economy, happiness, and crime while surviving random events like earthquakes, UFOs, and tornadoes.",
+    details: [
+      "40×40 grid system with Three.js procedural 3D geometry — no external models needed.",
+      "Full day/night cycle (4-minute loop) with ambient light, window glow, and sky color interpolation.",
+      "Right-hand lane traffic with per-car slot reservation to prevent stacking.",
+      "10 weighted random events: earthquake, UFO, tornado, fire, festival, crime wave, and more.",
+      "5 unlock levels from Village to Metropolis, with economy ticks, happiness modelling, and income breakdown panel.",
+      "Highway ramps with real inclined geometry, 2×2 roundabouts, and auto-connecting road arms."
+    ],
+    status:
+      "Live on Vercel. Single static HTML file with ES module imports — no build step.",
+    deliverableSteps: [
+      "Add save/load via localStorage so cities persist across sessions.",
+      "Add a minimap for large city navigation.",
+      "Add more building types: stadium, university, port."
+    ]
+  },
+  {
     id: "dh-citybuilder",
     title: "CityBuilder",
     owner: "Dima",

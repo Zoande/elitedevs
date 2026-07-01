@@ -8,6 +8,7 @@
 
   // Pick most important projects to display (6 total)
   const featuredIds = [
+    "dh-metrozone",
     "zoande-brokersim",
     "zoande-stellarfronts",
     "pablo-pocketvault",

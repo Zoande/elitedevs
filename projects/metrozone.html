@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project | EliteDevs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animate.css for smooth animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- AOS (Animate On Scroll) for scroll-triggered animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link rel="stylesheet" href="../styles-premium-light.css" />
+  </head>
+  <body data-project-id="dh-metrozone">
+    <!-- Navigation -->
+    <nav class="site-nav">
+      <div class="nav-container">
+        <a href="/" class="nav-logo">ELITEDEVS</a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="/#projects" class="active">Projects</a></li>
+          <li class="nav-item"><a href="/about">About</a></li>
+          <li class="nav-item"><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="bg-shape s1"></div>
+    <div class="bg-shape s2"></div>
+    <div class="bg-shape s3"></div>
+    <div class="bg-shape s4"></div>
+    <div class="bg-shape s5"></div>
+
+    <main id="project-page" class="project-layout">
+      <a class="back-link" href="/#projects">Back to Projects</a>
+
+      <section class="project-hero">
+        <p class="owner" id="project-owner"></p>
+        <h1 id="project-title"></h1>
+        <p id="project-summary"></p>
+        <div id="project-tech" class="chip-row" style="margin-top: 1.2rem"></div>
+        <div class="actions">
+          <a id="project-repo" class="button" href="#" target="_blank" rel="noopener noreferrer">Open GitHub Repo</a>
+          <a class="button ghost" href="/#projects">View Projects</a>
+        </div>
+      </section>
+
+      <section class="project-grid-two">
+        <article class="panel">
+          <h3>Current Status</h3>
+          <p id="project-stage"></p>
+          <hr style="margin: 1rem 0; border: none; border-top: 1px solid var(--border); opacity: 0.3;" />
+          <p id="project-status"></p>
+        </article>
+
+        <article class="panel">
+          <h3>Source Code</h3>
+          <p class="small-note">Local path</p>
+          <p id="project-local-path" style="font-family: 'Courier New', monospace; font-size: 0.9rem; color: var(--accent); word-break: break-all;"></p>
+          <p class="small-note" style="margin-top: 1rem;">GitHub</p>
+          <a id="project-repo-link" class="button ghost" href="#" target="_blank" rel="noopener noreferrer" style="margin-top: 0.5rem; width: fit-content;">View on GitHub</a>
+        </article>
+
+        <article class="panel">
+          <h3>Architecture & Features</h3>
+          <ul id="project-details"></ul>
+        </article>
+
+        <article class="panel">
+          <h3>Roadmap</h3>
+          <ul id="project-steps"></ul>
+        </article>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        easing: 'ease-in-out-cubic',
+        once: false,
+        mirror: true,
+        offset: 100
+      });
+    </script>
+    <script src="../data/projects.js"></script>
+    <script src="../scripts/project.js"></script>
+  </body>
+</html>

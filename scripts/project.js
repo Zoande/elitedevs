@@ -38,6 +38,12 @@
       href: "http://localhost:4311",
       note: "Run mode uses local Next server on port 4311."
     },
+    "dh-metrozone": {
+      type: "play",
+      label: "Play MetroZone",
+      href: "https://metrozoone.vercel.app",
+      note: "Live on Vercel — opens in a new tab."
+    },
     "dh-citybuilder": {
       type: "play",
       label: "Play Project",
